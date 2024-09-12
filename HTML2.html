@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <!-- <script type="module" src="main.js" defer></script> -->
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Ann Jose</h1>
+            <p>Software Developer</p>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <section class="section">
+                    <h2>Contact</h2>
+                    <div id="contact-display"></div>
+                    <button class="toggle-btn" data-section="contact">+</button>
+                    <div id="contact-form-section" class="form-section hide">
+                        <form id="contact-form">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" placeholder="123-456-7890" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                            <label for="linkedin">LinkedIn:</label>
+                            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile" required>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="Your address" required>
+                            <button type="button" id="contact-submit-btn">Submit</button>
+                            <button type="button" id="contact-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="contact-error" class="error-message"></p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Programming Languages</h2>
+                    <div id="programming-display"></div>
+                    <button class="toggle-btn" data-section="programming">+</button>
+                    <div id="programming-form-section" class="form-section hide">
+                        <form id="programming-form">
+                            <label for="programming-language-name">Programming Language Name:</label>
+                            <input type="text" id="programming-language-name" name="programmingLanguageName" placeholder="Programming Language Name" required>
+                            <button type="button" id="programming-submit-btn">Submit</button>
+                            <button type="button" id="programming-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="programming-error" class="error-message"></p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Education</h2>
+                    <div id="education-display"></div>
+                    <button class="toggle-btn" data-section="education">+</button>
+                    <div id="education-form-section" class="form-section hide">
+                        <form id="education-form">
+                            <label for="institute">Institute Name:</label>
+                            <input type="text" id="institute" name="institute" placeholder="Institute Name" required>
+                            <label for="duration">Duration:</label>
+                            <input type="text" id="duration" name="duration" placeholder="e.g., 2020-2024" required>
+                            <label for="cgpa">CGPA:</label>
+                            <input type="text" id="cgpa" name="cgpa" placeholder="e.g., 6.64" required>
+                            <button type="button" id="education-submit-btn">Submit</button>
+                            <button type="button" id="education-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="education-error" class="error-message"></p>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="content">
+                <section class="section">
+                    <h2>Profiles</h2>
+                    <div id="profile-display"></div>
+                    <button class="toggle-btn" data-section="profile">+</button>
+                    <div id="profile-form-section" class="form-section hide">
+                        <form id="profile-form">
+                            <label for="profile">Profile:</label>
+                            <textarea id="profile" name="profile" placeholder="Enter profile details here..." required></textarea>
+                            <button type="button" id="profile-submit-btn">Submit</button>
+                            <button type="button" id="profile-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="profile-error" class="error-message"></p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Internships</h2>
+                    <div id="internship-display"></div>
+                    <button class="toggle-btn" data-section="internship">+</button>
+                    <div id="internship-form-section" class="form-section hide">
+                        <form id="internship-form">
+                            <label for="firm">Firm Name:</label>
+                            <input type="text" id="firm" name="firm" placeholder="Firm Name" required>
+                            <label for="role">Role:</label>
+                            <input type="text" id="role" name="role" placeholder="Role Name" required>
+                            <label for="period">Period:</label>
+                            <input type="text" id="period" name="period" placeholder="e.g., 2020-2024" required>
+                            <button type="button" id="internship-submit-btn">Submit</button>
+                            <button type="button" id="internship-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="internship-error" class="error-message"></p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Projects</h2>
+                    <div id="project-display"></div>
+                    <button class="toggle-btn" data-section="project">+</button>
+                    <div id="project-form-section" class="form-section hide">
+                        <form id="project-form">
+                            <label for="project-name">Project Name:</label>
+                            <input type="text" id="project-name" name="projectName" placeholder="Project Name" required>
+                            <button type="button" id="project-submit-btn">Submit</button>
+                            <button type="button" id="project-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="project-error" class="error-message"></p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Experience</h2>
+                    <div id="experience-display"></div>
+                    <button class="toggle-btn" data-section="experience">+</button>
+                    <div id="experience-form-section" class="form-section hide">
+                        <form id="experience-form">
+                            <label for="designation">Designation:</label>
+                            <input type="text" id="designation" name="designation" placeholder="Designation" required>
+                            <label for="organization">Organization:</label>
+                            <input type="text" id="organization" name="organization" placeholder="Organization" required>
+                            <label for="timePeriod">Time Period:</label>
+                            <input type="text" id="timePeriod" name="timePeriod" placeholder="e.g., Jan 2020 - Dec 2024" required>
+                            <button type="button" id="experience-submit-btn">Submit</button>
+                            <button type="button" id="experience-cancel-btn">Cancel</button>
+                        </form>
+                        <p id="experience-error" class="error-message"></p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>Languages: English &#9670;&#9670;&#9670;&#9670;&#9670; | Malayalam &#9670;&#9670;&#9670;&#9670;&#9670; | Tamil &#9670;&#9670;&#9671;&#9671;&#9671;</p>
+        </footer>
+    </div>
+</body>
+</html>

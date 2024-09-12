@@ -1,0 +1,931 @@
+.box {
+  width: 80%;
+  border: 1px solid black;
+  padding: 9.92%;
+  text-align: center;
+  font-size: 200%;
+  font-family: Verdana, sans-serif;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+.box2 {
+  /*  css styling for Box 2  */
+  width: 40%;
+
+  border: 1px solid black;
+  padding: 1%;
+
+
+
+
+}
+
+.box3 {
+  /*  css styling for Box 3   */
+  width: 60%;
+
+  border: 1px solid black;
+  padding: 1%;
+
+
+
+
+
+}
+
+.left-section,
+.right-section {
+  border-bottom: 4px dashed rgb(0, 0, 0);
+  padding-bottom: 10px;
+}
+
+p {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 3px;
+  line-height: 1.6;
+  ;
+  margin: 0;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: none;
+}
+
+
+.phone-number-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact-form label {
+  font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="url"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form input[type="url"] {
+    font-size: 16px;
+  }
+
+  #contact-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+
+.phone-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+
+.delete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+
+
+
+.phone-number-input-section.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.education-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#education-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#education-form label {
+  font-weight: bold;
+}
+
+#education-form input[type="text"],
+#education-form input[type="email"],
+#education-form input[type="url"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#education-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#education-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #education-form input[type="text"],
+  #education-form input[type="email"],
+  #education-form input[type="url"] {
+    font-size: 16px;
+  }
+
+  #education-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.education-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.eddelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.eddelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+
+.education-input-section.show {
+  display: block;
+}
+
+
+
+
+
+.experience-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#experience-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#experience-form label {
+  font-weight: bold;
+}
+
+#experience-form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#experience-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#experience-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#experience-cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#experience-cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #experience-form input[type="text"] {
+    font-size: 16px;
+  }
+
+  #experience-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.experience-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.exdelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.exdelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+.experience-input-section.show {
+  display: block;
+}
+
+
+
+
+.internship-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#internship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#internship-form label {
+  font-weight: bold;
+}
+
+#internship-form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#internship-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#internship-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#internship-cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#internship-cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #internship-form input[type="text"] {
+    font-size: 16px;
+  }
+
+  #internship-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.internship-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.indelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.indelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+.internship-input-section.show {
+  display: block;
+}
+
+
+.profile-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#profile-form label {
+  font-weight: bold;
+}
+
+#profile-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+#profile-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#profile-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#profile-cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#profile-cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #profile-form textarea {
+    font-size: 16px;
+  }
+
+  #profile-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.profile-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.pdelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.pdelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+.profile-input-section.show {
+  display: block;
+}
+
+
+
+.project-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#project-form label {
+  font-weight: bold;
+}
+
+#project-form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#project-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#project-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#project-cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#project-cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #project-form input[type="text"] {
+    font-size: 16px;
+  }
+
+  #project-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.project-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.prdelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.prdelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+.project-input-section.show {
+  display: block;
+}
+
+
+.programming-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#programming-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#programming-form label {
+  font-weight: bold;
+}
+
+#programming-form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#programming-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#programming-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#programming-cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#programming-cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #programming-form input[type="text"] {
+    font-size: 16px;
+  }
+
+  #programming-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.programming-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.pldelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.pldelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+.programming-input-section.show {
+  display: block;
+}
+
+
+
