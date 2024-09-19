@@ -4,6 +4,7 @@ export class UserManager {
         this.userDisplay = document.getElementById("user-display");
         this.userFormSection = document.getElementById("user-form-section");
         this.userErrorElement = document.getElementById("user-error");
+        this.addUserButton = document.getElementById("add-user-btn"); // Get the plus button
         this.init();
     }
 
@@ -12,7 +13,7 @@ export class UserManager {
         document.addEventListener("DOMContentLoaded", () => this.loadUsers());
         document.getElementById("user-submit-btn").addEventListener("click", () => this.submitUserForm());
         document.getElementById("user-cancel-btn").addEventListener("click", () => this.clearUserForm());
-        document.querySelector("input[name='user']").addEventListener("click", () => this.showUserForm());
+        this.addUserButton.addEventListener("click", () => this.showUserForm());
 
         document.addEventListener("click", (event) => {
             if (event.target.classList.contains("user-delete-btn")) {
@@ -43,6 +44,9 @@ export class UserManager {
             this.saveUserDetails({ userName });
             this.displayUserDetails();
             this.clearUserForm();
+
+            // Hide the plus button after submission
+            this.addUserButton.style.display = "none"; // Or you can use this.addUserButton.classList.add("hide"); if you have a hide class
         } else {
             this.userErrorElement.textContent = "All fields are required.";
         }
