@@ -978,3 +978,122 @@ p {
       font-size: 12pt;
   }
 }
+
+
+
+.user-input-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+
+#user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#user-form label {
+  font-weight: bold;
+}
+
+#user-form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#user-form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#user-form input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#user-cancel-btn {
+  background-color: #a8a8a8;
+}
+
+#user-cancel-btn:hover {
+  background-color: #bdb9b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 150%;
+  }
+
+  .box2,
+  .box3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #user-form input[type="text"] {
+    font-size: 16px;
+  }
+
+  #user-form input[type="button"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.user-entry {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.urdelete-btn {
+  background: rgb(185, 184, 184);
+  border: none;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.urdelete-btn:hover {
+  background: rgb(174, 243, 141);
+}
+
+.user-input-section.show {
+  display: block;
+}
